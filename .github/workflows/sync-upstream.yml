@@ -7,6 +7,10 @@ on:
   # Allows you to trigger the sync manually from the GitHub Actions tab
   workflow_dispatch:
 
+permissions:
+  contents: write
+  workflows: write
+
 jobs:
   sync:
     runs-on: ubuntu-latest
